@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environments
+myenv/
+venv/
+.env/
+
+
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Outputs
+# edge-playwright-profile/ --> is a seperate browser directory for agent to open the browser
+
+output/
+generated/
+edge-playwright-profile/ 
+*.pdf
+*.tex
+
+# Logs
+*.log
