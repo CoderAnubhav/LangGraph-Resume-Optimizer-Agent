@@ -35,13 +35,16 @@ from playwright.sync_api import sync_playwright
 
 
 EDGE_PATH = "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
-PROFILE = "/Users/anubhavmisra/edge-playwright-profile"
+PROFILE = "/Users/anubhavmisra/Project/edge-playwright-profile"
 
 with sync_playwright() as p:
     context = p.chromium.launch_persistent_context(
         user_data_dir=PROFILE,
         executable_path=EDGE_PATH,
         headless=False,
+        args=[
+            "--disable-blink-features=AutomationControlled"
+        ]
     )
     page = context.new_page()
     page.goto("https://www.linkedin.com")

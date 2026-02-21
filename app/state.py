@@ -21,7 +21,7 @@ class ResumeState(TypedDict):
 from typing import TypedDict, Optional, Dict
 
 class AgentState(TypedDict):
-    linkedin_url: Optional[str]
+    #linkedin_url: Optional[str]
     job_description: Optional[str]
     cleaned_jd: Optional[str]
     jd_analysis: Optional[Dict]

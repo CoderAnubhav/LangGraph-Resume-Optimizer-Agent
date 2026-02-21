@@ -6,3 +6,6 @@ langchain-groq
 playwright
 pydantic
 rich
+beautifulsoup4
+lxml
+python-multipart
